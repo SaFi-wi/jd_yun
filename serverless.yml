@@ -11,7 +11,7 @@ inputs:
   enableRoleAuth: true # 默认会尝试创建 SCF_QcsRole 角色，如果不需要配置成 false 即可
   src: 
     src: ./
-    exclude:
+    #exclude:
       - '*.!(js|txt|json)'
       - 'backUp/**'
       - 'icon/**'
