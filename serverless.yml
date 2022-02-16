@@ -11,15 +11,7 @@ inputs:
   enableRoleAuth: true # 默认会尝试创建 SCF_QcsRole 角色，如果不需要配置成 false 即可
   src: 
     src: ./
-    #exclude:
-      - '*.!(js|txt|json)'
-      - 'backUp/**'
-      - 'icon/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'LICENSE'
-      - 'ql.js'
-      - 'jd_CheckCK.js'
+   
   handler: index.main_handler #入口
   runtime: Nodejs12.16 # 运行环境 默认 Nodejs12.16
   region: ap-guangzhou # 函数所在区域
